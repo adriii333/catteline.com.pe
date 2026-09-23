@@ -1,0 +1,681 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #fff8fb;
+    color: #5E130F;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   BARRA SUPERIOR
+========================= */
+
+.barra-superior {
+    background-color: #5E130F;
+    color: white;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 25px;
+
+    font-size: 30px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 90px;
+
+    background-color: #FEF3B3;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 60px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu a {
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #F29EC1;
+}
+
+
+/* =========================
+   TITULOS GENERALES
+========================= */
+
+h2 {
+    text-align: center;
+
+    font-size: 32px;
+
+    line-height: 1;
+
+    margin-bottom: 35px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   PORTADA / HERO
+========================= */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+
+    background-color: #F29EC1;
+}
+
+
+/* TEXTO */
+
+.hero-texto {
+
+    width: 45%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 40px 60px 100px 80px;
+}
+
+
+.hero-texto h1 {
+
+    font-size: 70px;
+
+    line-height: 0.95;
+
+    margin-bottom: 35px;
+
+    letter-spacing: 2px;
+}
+
+
+.hero-texto .frase {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    line-height: 1.4;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   CREDITOS
+========================= */
+
+.creditos {
+
+    margin-top: 100px;
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    letter-spacing: 1px;
+
+    font-weight: normal;
+}
+
+
+.creditos p:first-child {
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   IMAGEN MODELO
+========================= */
+
+.hero-imagen {
+
+    width: 55%;
+
+    height: 600px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background-color: #F29EC1;
+}
+
+
+.hero-imagen img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    object-position: center;
+}
+
+
+/* =========================
+   VIDEO
+========================= */
+
+.video {
+
+    padding: 70px 8%;
+
+    background-color: #fff8fb;
+}
+
+
+.video h2 {
+
+    color: #5E130F;
+}
+
+
+video {
+
+    width: 50%;
+
+    display: block;
+
+    margin: auto;
+}
+
+
+
+/* =========================
+   SECCIÓN PRODUCTOS
+========================= */
+
+.productos {
+
+    padding: 70px 8%;
+
+    background-color: #fff8fb;
+}
+
+
+.titulo-productos {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+
+.titulo-productos h2 {
+
+    font-size: 32px;
+
+    color: #5E130F;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   CATEGORÍAS
+========================= */
+
+.categorias {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    margin-bottom: 70px;
+}
+
+
+.categoria {
+
+    text-align: center;
+}
+
+
+.categoria img {
+
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: contain;
+
+    object-position: center;
+
+    background-color: white;
+
+    margin-bottom: 15px;
+}
+
+
+.categoria h3 {
+
+    font-size: 20px;
+
+    color: #5E130F;
+}
+
+
+/* =========================
+   PRODUCTOS
+========================= */
+
+.productos-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+.producto {
+
+    background-color: white;
+
+    padding-bottom: 20px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+
+.producto:hover {
+
+    transform: translateY(-5px);
+}
+
+
+.producto img {
+
+    width: 100%;
+
+    height: 350px;
+
+    object-fit: contain;
+
+    object-position: center;
+
+    background-color: white;
+}
+
+
+.producto p {
+
+    margin-top: 15px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #5E130F;
+}
+
+
+/* =========================
+   NOSOTROS
+========================= */
+
+.nosotros {
+
+    padding: 80px 8%;
+
+    background-color: #F29EC1;
+}
+
+
+.titulo-nosotros {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+
+.titulo-nosotros h2 {
+
+    font-size: 40px;
+
+    color: #5E130F;
+
+    letter-spacing: 2px;
+}
+
+
+/* EQUIPO */
+
+.equipo {
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 25px;
+
+    align-items: start;
+}
+
+
+.persona {
+
+    text-align: center;
+}
+
+
+/* ESPACIO PARA FOTO */
+
+.foto-persona {
+
+    width: 100%;
+
+    height: 250px;
+
+    background-color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    margin-bottom: 15px;
+}
+
+
+.foto-persona img {
+
+    width: 90%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+.persona h3 {
+
+    font-size: 16px;
+
+    color: #5E130F;
+
+    line-height: 1.3;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    background-color: #5E130F;
+
+    color: white;
+
+    padding: 45px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+/* REDES */
+
+.footer-redes {
+
+    line-height: 2;
+
+    font-size: 14px;
+}
+
+
+.footer-redes p {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 10px;
+}
+
+
+/* ICONOS */
+
+.footer-redes .icono-red {
+
+    width: 18px !important;
+
+    height: 18px !important;
+
+    min-width: 18px !important;
+
+    max-width: 18px !important;
+
+    min-height: 18px !important;
+
+    max-height: 18px !important;
+
+    object-fit: contain;
+
+    display: inline-block;
+
+    margin: 0;
+}
+
+
+/* LOGO FOOTER */
+
+.footer-logo {
+
+    text-align: center;
+}
+
+
+.footer-logo img {
+
+    width: 120px;
+
+    margin: 0 auto 10px;
+}
+
+
+.footer-logo p {
+
+    font-size: 13px;
+
+    font-style: italic;
+}
+
+
+/* =========================
+   RESPONSIVE - CELULAR
+========================= */
+
+@media (max-width: 768px) {
+
+
+    /* NAVBAR */
+
+    .navbar {
+
+        padding: 10px 25px;
+    }
+
+
+    .menu {
+
+        gap: 15px;
+    }
+
+
+    .menu a {
+
+        font-size: 11px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+
+        flex-direction: column;
+    }
+
+
+    .hero-texto {
+
+        width: 100%;
+
+        padding: 50px 30px;
+    }
+
+
+    .hero-texto h1 {
+
+        font-size: 45px;
+    }
+
+
+    .hero-imagen {
+
+        width: 100%;
+
+        height: 500px;
+    }
+
+
+    /* CREDITOS */
+
+    .creditos {
+
+        margin-top: 60px;
+    }
+
+
+    /* VIDEO */
+
+    video {
+
+        width: 200%;
+    }
+
+
+    /* CATEGORIAS */
+
+    .categorias {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    /* PRODUCTOS */
+
+    .productos-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    /* NOSOTROS */
+
+    .equipo {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .foto-persona {
+
+        height: 250px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 30px;
+
+        text-align: center;
+    }
+
+}
